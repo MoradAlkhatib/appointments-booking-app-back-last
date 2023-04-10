@@ -55,10 +55,13 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'core.urls'
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        # other authentication classes as needed
+    ),
+    # other settings as needed
 }
+
 
 TEMPLATES = [
     {
