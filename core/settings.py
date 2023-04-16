@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'cloudinary_storage',
+    'cloudinary',
     'user',
     'shop'
 ]
@@ -137,3 +139,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 AUTH_USER_MODEL = 'user.User'
+
+# connect to db.
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dprf3qgsi',
+    'API_KEY': '183719714428982',
+    'API_SECRET': 'wJjask6vcFzF1kbHgJcaqYfzVW4'
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
