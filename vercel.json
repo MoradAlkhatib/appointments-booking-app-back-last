@@ -8,7 +8,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "stop_and_shop_back/wsgi.py"
+        "dest": "core/wsgi.py"
       }
     ]
   }
