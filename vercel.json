@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "stop_and_shop_back/wsgi.py",
+        "src": "core/wsgi.py",
         "use": "@vercel/python"
       }
     ],
